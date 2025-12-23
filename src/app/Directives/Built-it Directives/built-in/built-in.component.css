@@ -1,0 +1,15 @@
+.displayedFlex {
+  display: flex;
+  color: blueviolet;
+  font-size: 1rem;
+}
+
+.ngForItems {
+  display: flex;
+  font-size: 3rem;
+  flex-direction: column;
+}
+
+.ngForItem {
+  margin: 0;
+}

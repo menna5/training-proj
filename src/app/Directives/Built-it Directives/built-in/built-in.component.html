@@ -1,0 +1,28 @@
+<p appCustomDir>Custom directive works without colors!</p>
+<p [appCustomDir]="'blue'">Custom directive works with color!</p>
+<p [appCustomDir]="'green'" [defaultColor]="'pink'">
+  Custom directive works with color and defaultColor!
+</p>
+
+<p [ngStyle]="{ color: checkedNgIf ? 'blueviolet' : 'black' }">
+  Check to show!
+</p>
+<div [ngClass]="checkedNgIf ? 'displayedFlex' : ''">
+  <input type="checkbox" [(ngModel)]="checkedNgIf" />
+  <h1 *ngIf="checkedNgIf">shown if checked</h1>
+</div>
+
+<p>List using ngFor</p>
+<div class="ngForItems">
+  <h6 *ngFor="let item of ngForList; index as i" class="ngForItem">
+    {{ item.text }}
+  </h6>
+</div>
+
+<ng-template #template let-data>
+  Hello {{ data }}!, from ngTemplete!!
+</ng-template>
+
+<ng-container
+  *ngTemplateOutlet="template; context: { $implicit: 'Hendawy' }"
+></ng-container>
