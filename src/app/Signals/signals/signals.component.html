@@ -1,0 +1,14 @@
+<p>{{ first() | uppercase }}</p>
+
+<div>
+  <h2>Login Example (Signals)</h2>
+
+  <div>
+    <p>
+      Welcome, <strong>{{ loggedIn() }}</strong>
+    </p>
+
+    <button (click)="login()">LogIn</button>
+    <button (click)="logout()">Logout</button>
+  </div>
+</div>
