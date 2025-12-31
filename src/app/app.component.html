@@ -1,1 +1,9 @@
+<h1>Primary Outlet</h1>
 <router-outlet></router-outlet>
+
+<h2>SideBar Outlet</h2>
+<router-outlet name="sideBar"></router-outlet>
+
+<button [routerLink]="[{ outlets: { sideBar: ['pipes'] } }]">
+  Open Pipes in SideBar
+</button>

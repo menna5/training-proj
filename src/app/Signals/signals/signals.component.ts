@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, computed, signal, effect, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-signals',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './signals.component.html',
   styleUrl: './signals.component.css',
 })
